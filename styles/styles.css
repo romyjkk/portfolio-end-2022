@@ -785,23 +785,7 @@ main section:first-of-type article:last-of-type ul li .arrow {
 
 @media (min-width: 38em) {
 
-
-    #projects main section article ul.projectimages {
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center; */
-    }
-
-    #projects main section article ul.projectimages li {
-        /* align-self: center; */
-        /* align-self: center;
-        align-items: flex-start; */
-    }
-
     #projects main section article ul.projectimages img {
-        /* max-height: 20em;
-        max-width: 25em; */
-
         align-self: center;
     }
 
@@ -809,19 +793,25 @@ main section:first-of-type article:last-of-type ul li .arrow {
         margin: 3em;
     }
 
-    #projects main section ul li p {
-        /* width: 80%; */
+    #projects main section:last-of-type article ul.projectimages {
+        margin: 0 1em 0 1em;
     }
+
+    #projects main section:last-of-type article ul.projectimages img {
+        max-height: 30em;
+    }
+
+    #projects main section:last-of-type article ul:first-of-type {
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 @media (min-width: 50em) {
     #projects section.introduction article ul:first-of-type li {
         width: 60%;
     }
-
-    /* #projects main section ul li p {
-        width: 80%;
-    } */
 
     #projects header nav ul {
         margin: 2em;
@@ -833,6 +823,11 @@ main section:first-of-type article:last-of-type ul li .arrow {
 
 
         align-self: center;
+    }
+
+    #projects main section:last-of-type article ul.projectimages img {
+        max-height: 30em;
+        max-width: 40em;
     }
 }
 
@@ -896,8 +891,6 @@ main section:first-of-type article:last-of-type ul li .arrow {
         font-size: 1.1em;
     }
 
-    #projects main section:last-of-type ul:nth-of-type(2) {}
-
     #projects main section:last-of-type ul.centeredul li p {
         width: 100%;
     }
@@ -911,8 +904,9 @@ main section:first-of-type article:last-of-type ul li .arrow {
         align-items: flex-start;
     }
 
-    #projects main section article ul.projectimages img {
-        /* align-self: flex-start; */
+    #projects main section:last-of-type article ul.projectimages img {
+        max-height: 35em;
+        max-width: 40em;
     }
 }
 
@@ -920,11 +914,25 @@ main section:first-of-type article:last-of-type ul li .arrow {
     #projects main section ul li p {
         width: 60%;
     }
+
+    #projects main section article ul.projectimages li p {
+        width: 100%;
+    }
 }
 
 @media (min-width: 100em) {
     #projects section.introduction article ul:first-of-type li {
         width: 40%;
+    }
+
+    #projects main section article ul.projectimages img {
+        max-height: 35em;
+        max-width: 30em;
+        /* width: auto; */
+    }
+
+    #projects main section article ul.projectimages li p {
+        width: 100%;
     }
 
     .projectimages {
