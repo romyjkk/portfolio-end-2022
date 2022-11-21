@@ -712,6 +712,28 @@ main section:first-of-type article:last-of-type ul li .arrow {
     margin: 1em;
 }
 
+/* and on the about page */
+
+#about main section article ul.designs {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+}
+
+#about main section article ul.designs li {
+    margin: 0;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about main section:last-of-type article ul:first-of-type {
+    margin: 1em;
+}
+
 /* buttons to the websites */
 
 .centeredul {
@@ -813,7 +835,7 @@ main section:first-of-type article:last-of-type ul li .arrow {
         width: 60%;
     }
 
-    #projects header nav ul {
+    header nav ul {
         margin: 2em;
     }
 
@@ -953,6 +975,167 @@ main section:first-of-type article:last-of-type ul li .arrow {
 
     #projects main section ul li p {
         width: 50%;
+    }
+}
+
+/* about me */
+
+#about main section {
+    margin: 0;
+}
+
+#about main section:first-of-type ul:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+#about main section:first-of-type ul:nth-of-type(2) li {
+    align-self: center;
+}
+
+#about main section:first-of-type ul.designs {
+    margin: 0;
+}
+
+#about main section article ul {
+    margin: 1em;
+}
+
+/* my skills icons */
+
+#about main section:nth-of-type(3) article {
+    margin: 1em;
+}
+
+#about main section:nth-of-type(3) article ul:first-of-type {
+    text-align: center;
+}
+
+#about main section:nth-of-type(3) article ul:nth-of-type(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    flex-grow: 1;
+}
+
+#about main section:nth-of-type(3) article ul:nth-of-type(2) li {
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+#about main section:nth-of-type(3) article ul:nth-of-type(2) img {
+    max-width: 5em;
+}
+
+/* section colors */
+
+#about main section:nth-of-type(2) {
+    background-color: var(--white);
+}
+
+#about main section:nth-of-type(3) {
+    background-color: var(--colortwo);
+}
+
+@media (min-width:38em) {
+    #about main section.introduction article ul:first-of-type {
+        display: flex;
+        justify-content: center;
+
+        margin: 1.5em 1em 1em 1em;
+
+    }
+
+    #about main section.introduction article ul:first-of-type li {
+        width: 70%;
+    }
+
+    #about main section:nth-of-type(2) article {
+        margin: 3em;
+    }
+
+    #about main section:nth-of-type(3) article {
+        margin: 2em;
+    }
+}
+
+@media (min-width:50em) {
+    #about main section.introduction article ul:first-of-type {
+        display: flex;
+        justify-content: center;
+
+        margin: 2em 1em 2em 1em;
+    }
+
+    #about main section.introduction article ul:first-of-type li {
+        width: 50%;
+    }
+}
+
+@media (min-width:60em) {
+    #about main section.introduction article ul:first-of-type {
+        display: flex;
+        justify-content: center;
+
+        margin: 2em 1em 2em 1em;
+    }
+
+    #about main section.introduction article ul:first-of-type li {
+        width: 40%;
+    }
+
+    #about main section ul li {
+        display: flex;
+        justify-content: center;
+    }
+
+    #about main section.introduction article ul:nth-of-type(2) li p {
+        width: 100%;
+    }
+
+    #about main section ul li p {
+        font-size: 1.1em;
+        width: 80%;
+    }
+
+    #about main section:nth-of-type(3) ul:nth-of-type(2) li {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+    }
+
+    #about main section:nth-of-type(3) ul:nth-of-type(2) li img {
+        max-width: 6em;
+    }
+}
+
+@media (min-width:75em) {
+    #about main section.introduction article ul:first-of-type {
+        display: flex;
+        justify-content: center;
+
+        margin: 2em 1em 2em 1em;
+    }
+
+    #about main section.introduction article ul:first-of-type li {
+        width: 30%;
+    }
+
+    #about main section ul li p {
+        width: 60%;
+    }
+}
+
+@media (min-width:100em) {
+    #about main section ul li p {
+        width: 50%;
+    }
+
+    h3 {
+        font-size: 1.5em;
     }
 }
 
