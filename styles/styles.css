@@ -16,6 +16,9 @@
     --colorfour: #7287a1;
     --colorfive: #a7bdd7;
     --colorsix: #c4d7ed;
+    --colorseven: #9fb2c9;
+    --coloreight: #7f93ab;
+    --colornine: #7c9fc7;
 
     --white: #ffffff;
     --black: #000000;
@@ -178,13 +181,17 @@ header nav ul:nth-of-type(2) li p {
     }
 
     header nav ul:last-of-type {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: flex-end;
         transition: .5s;
         /* margin: 1rem; */
         transform: translateX(40rem);
         overflow-x: hidden;
         margin: 0;
         width: 100%;
-        align-self: flex-end;
+        /* align-self: flex-end; */
         background-color: #ffffff;
     }
 
@@ -194,8 +201,9 @@ header nav ul:nth-of-type(2) li p {
     }
 
     header nav ul:last-of-type li {
-        margin: 3rem 2rem 3rem 2rem;
-        text-align: right;
+        width: 100px;
+        margin: 2em 1em 2em 2em;
+        text-align: center;
         font-weight: 500;
     }
 
@@ -451,6 +459,14 @@ main section:first-of-type article:last-of-type ul li .arrow {
     text-shadow: 0px 1px 0 0 rgb(0 0 0 / 20%);
 }
 
+/* bigger buttons */
+
+@media (min-width: 60em) {
+    #home main section article:nth-of-type(2) ul li p {
+        font-size: 1.1em;
+    }
+}
+
 /* home on bigger screens */
 
 #home main section article:nth-of-type(2) {
@@ -642,11 +658,34 @@ main section:first-of-type article:last-of-type ul li .arrow {
     #projects main section:last-of-type article ul.projectimagesgrid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: .5em;
 
         margin: 0 1em 1em 1em;
     }
+
+    #projects main section:last-of-type article ul.projectimagesgrid li img {
+        max-height: 40em;
+    }
 }
+
+@media (min-width: 110em) {
+    #projects main section:last-of-type article ul.projectimagesgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        gap: 0;
+        margin: 0 10em 1em 10em;
+    }
+}
+
+/* @media (min-width: 100em) {
+    #projects main section:last-of-type article ul.projectimagesgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        gap: 0;
+        margin: 0 8em 1em 8em;
+    }
+} */
 
 /* project pages different colors */
 
@@ -743,22 +782,27 @@ main section:first-of-type article:last-of-type ul li .arrow {
     margin: 2em 0 2em 0;
 }
 
-.button {
+@media (min-width: 60em) {
+    .centeredul {
+        margin: 3em 0 2em 0;
+    }
+}
+
+#projects main section:last-of-type article ul:last-of-type {
     display: flex;
     justify-content: center;
 
-    margin: 0 0 1em 0;
+    margin: 0 0 2em 0;
 }
 
-#projects main section article ul.button li {
+#projects main section article ul.button li p {
+    color: white;
+}
+
+#projects main section:last-of-type article ul:last-of-type li {
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     font-weight: 500;
-    text-align: center;
-
-    margin: 0 0 .5em 0;
-
-    /* width: 25%; */
 
     border: none;
     background: none;
@@ -768,22 +812,36 @@ main section:first-of-type article:last-of-type ul li .arrow {
 
     padding: .4rem .5rem .4rem .5rem;
 
-    color: #ffffff;
-    background-color: #7c8186;
-    box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
     transition: 0.1s;
     text-shadow: 0px 2px rgba(0, 0, 0, 0.2);
 
     transition: .4s;
 }
 
-#projects main section article ul.button li:active {
-    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
-    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+#projects main section:last-of-type ul:last-of-type li a p {
+    color: #ffffff;
 }
 
-#projects main section article ul.button li p {
-    color: white;
+#projects main section:last-of-type article ul.projectonebutton li {
+    background-color: #5c6e85;
+    box-shadow: inset 0 -5px #445365;
+}
+
+#projects main section:last-of-type article ul.projecttwobutton li {
+    background-color: #9eb7d3;
+    box-shadow: inset 0 -5px #8199b5;
+}
+
+#projects main section:last-of-type article ul.projectthreebutton li {
+    background-color: #8099b8;
+    box-shadow: inset 0 -5px #69809b;
+}
+
+
+@media (min-width: 60em) {
+    #projects main section:last-of-type ul:last-of-type li a p {
+        font-size: 1.1em;
+    }
 }
 
 /* project pages on smaller screens */
@@ -1050,7 +1108,7 @@ main section:first-of-type article:last-of-type ul li .arrow {
     }
 
     #about main section.introduction article ul:first-of-type li {
-        width: 70%;
+        width: 60%;
     }
 
     #about main section:nth-of-type(2) article {
@@ -1121,7 +1179,7 @@ main section:first-of-type article:last-of-type ul li .arrow {
     }
 
     #about main section.introduction article ul:first-of-type li {
-        width: 30%;
+        width: 25%;
     }
 
     #about main section ul li p {
@@ -1137,6 +1195,136 @@ main section:first-of-type article:last-of-type ul li .arrow {
     h3 {
         font-size: 1.5em;
     }
+}
+
+#about main section:nth-of-type(4) {
+    background-color: var(--white);
+}
+
+@media (max-width: 50em) {
+
+    #about main section:nth-of-type(4) article {
+        margin: 2em;
+    }
+
+    #about main section:nth-of-type(4) article ul:nth-of-type(1) {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 2em 0;
+    }
+
+    #about main section:nth-of-type(4) article ul:nth-of-type(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.5em;
+        margin: 1em 1em 1em 1em;
+    }
+
+    #about main section:nth-of-type(4) article ul:nth-of-type(2) li.flexstart {
+        display: inline-flex;
+        justify-content: baseline;
+    }
+
+    #about main section:nth-of-type(4) article ul:nth-of-type(2) li {
+        width: 170px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 50em) {
+    #about main section:nth-of-type(4) article {
+        margin: 2em;
+    }
+
+    #about main section:nth-of-type(4) article ul:nth-of-type(1) {
+        display: flex;
+        justify-content: center;
+        margin: 1em 0 2em 0;
+    }
+
+    #about main section:nth-of-type(4) article ul:nth-of-type(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.5em;
+        margin: 1em 1em 1em 1em;
+    }
+
+    #about main section:nth-of-type(4) article ul:nth-of-type(2) li {
+        width: 180px;
+        text-align: center;
+        margin: 1em 0 0 0;
+    }
+}
+
+@media (min-width: 75em) {
+
+    #about main section:nth-of-type(4) article {
+        margin: 2em;
+    }
+
+    #about main section:nth-of-type(4) article ul:nth-of-type(1) {
+        display: flex;
+        justify-content: center;
+        margin: 2em 0 2em 0;
+    }
+
+    #about main section:nth-of-type(4) article ul:nth-of-type(2) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 3em 1em 2em 1em;
+    }
+
+}
+
+#about main section:nth-of-type(4) article ul:nth-of-type(2) li {
+    padding: 1em;
+}
+
+#about main section:nth-of-type(4) article ul:nth-of-type(2) li:nth-of-type(1) {
+    background-color: var(--colorthree);
+}
+
+#about main section:nth-of-type(4) article ul:nth-of-type(2) li:nth-of-type(2) {
+    background-color: var(--colorfour);
+}
+
+#about main section:nth-of-type(4) article ul:nth-of-type(2) li:nth-of-type(3) {
+    background-color: var(--colorfive);
+}
+
+#about main section:nth-of-type(4) article ul:nth-of-type(2) li:nth-of-type(4) {
+    background-color: var(--colorsix);
+}
+
+#about main section:nth-of-type(4) article ul:nth-of-type(2) li:nth-of-type(5) {
+    background-color: var(--colorseven);
+}
+
+#about main section:nth-of-type(4) article ul:nth-of-type(2) li:nth-of-type(6) {
+    background-color: var(--coloreight);
+}
+
+#about main section:nth-of-type(4) article ul:nth-of-type(2) li:nth-of-type(7) {
+    background-color: var(--colornine);
+}
+
+#about main section:nth-of-type(4) article ul:nth-of-type(2) li p {
+    width: 100%;
+}
+
+/* animations */
+
+#about main section:nth-of-type(3) ul li img {
+    transition: 1.5s;
+}
+
+#about main section:nth-of-type(3) ul li img:hover {
+    transform: scale(1.2);
 }
 
 /* footer */
