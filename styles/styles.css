@@ -545,7 +545,7 @@ main section:first-of-type article:last-of-type ul li .arrow {
     }
 
     #home main {
-        margin: 1em 2em 2em 2em;
+        margin: 0em 2em 2em 2em;
     }
 
     #home main section article:nth-of-type(2) ul {
