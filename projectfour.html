@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data visualisations using JavaScript</title>
+
+    <link href="styles/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body id="projects">
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <h1><a href="index.html">Romy Jongkees</a></h1>
+                </li>
+                <li><button>Menu</button></li>
+            </ul>
+
+            <ul>
+                <li><a href="index.html">
+                        <p>Home</p>
+                    </a></li>
+                <li><a href="aboutme.html">
+                        <p>About me</p>
+                    </a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="cats">
+
+        <!-- first section -->
+        <section class="introduction">
+            <article>
+                <ul>
+                    <li><img src="images/cathuggermockuptwo.png" alt=""></li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <h2>Data visualisations using JavaScript</h2>
+                    </li>
+                    <li>
+                        <p class="italic">School project • HTML-CSS-JS • D3/Leaflet • VSC-Photoshop</p>
+                    </li>
+                </ul>
+
+                <ul class="designs">
+                    <li>
+                        <div class="arrow"></div>
+                        <div class="rectangle"></div>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- second section -->
+        <section>
+            <article>
+                <ul>
+                    <li>
+                        <h3>The process</h3>
+                    </li>
+                    <li>
+                        <p>The first thing I had to do for this project was to think of an idea. Luckily this was pretty
+                            quickly decided, when my boyfriend suggested I do it about cats. Cats are my favorite
+                            animals, and this way I can combine a few things I’m very interested in: JavaScript and
+                            cats!</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- third section -->
+        <section>
+            <article>
+                <ul class="projectimages">
+                    <li class="exception">
+                        <img src="images/cathuggerone.png" alt="0.5x zoomed pictures of cats">
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- fourth section -->
+        <section>
+            <article>
+                <ul>
+                    <li>
+                        <p>My first idea was to make a map in which the origin of each cat breed is shown. I decided to
+                            use Leaflet for this, since my teacher recommended it to us. Leaflet is a JavaScript
+                            library, for interactive maps. I was able to use a JSON file, which stored all my data. With
+                            a forEach loop, markers were made for every single cat. This didn’t look very nice yet,
+                            since it just showed a basic location marker. So I added a custom marker and it fit way
+                            better in the theme!
+                        </p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- fifth section -->
+        <section>
+            <article class="projectarticle">
+                <ul class="projectimages">
+                    <li>
+                        <p>The finished map</p><img src="images/cathuggertwo.png" alt="The finished map (zoomed in)">
+                    </li>
+                    <li>
+                        <p>The loop I used</p><img src="images/cathuggerthree.png" alt="Code snippet: forEach loop">
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- sixth section -->
+        <section>
+            <article>
+                <ul>
+                    <li>
+                        <p>D3 is another JavaScript library we learned about, with which you can manipulate documents
+                            based on data. A big part of the visualisations you’re able to create with D3 are SVG’s
+                            (Scalable Vector Graphics). I decided to use this, because I wanted to make some sort of bar
+                            chart, which showcased the 10 most popular cats in different countries/continents. A filter
+                            function should be included for some extra interaction. I added the data I was able to find
+                            in another JSON file and got to work!</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- seventh section -->
+        <section>
+            <article>
+                <ul class="projectimages">
+                    <li class="exception">
+                        <p>How my JSON file looks</p><img src="images/cathuggerfour.png"
+                            alt="Code snippet: JSON file with data">
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- eight section -->
+        <section>
+            <article>
+                <ul>
+                    <li>
+                        <p>Using a bunch of examples from my teachers and ofcourse the internet, I made a bar chart.
+                            Instead of a normal bar, I wanted to add images so you could really see which cats the chart
+                            would be talking about. I asked my teacher about this, and he told me I had to create a
+                            different SVG pattern for each cat, with matching height and width attributes. Since there
+                            were quite a few different cats, it took me a while. I also quickly realised I had to make
+                            the images fit inside of the bars, which means I had to do some adjustments in Photoshop.
+                        </p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- ninth section -->
+        <section>
+            <article>
+                <ul class="projectimages">
+                    <li>
+                        <p>Some D3 code</p><img src="images/cathuggerfive.png" alt="Code snippet: D3">
+                    </li>
+                    <li>
+                        <p>How I created each SVG pattern</p><img src="images/cathuggersix.png"
+                            alt="Code snippet: SVG patterns">
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- tenth section -->
+        <section>
+            <article>
+                <ul>
+                    <li>
+                        <p>When this was done, I just had to make the filter function. I was having some trouble with
+                            it, but luckily my teacher was happy to help me. A filter function was made, which returned
+                            the right item. By adding an eventListener I made sure that, when you clicked the buttons,
+                            the right items showed. This was done by giving the buttons a value.
+                        </p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- eleventh section -->
+        <section>
+            <article>
+                <ul class="projectimages">
+                    <li>
+                        <p>My filter function</p><img src="images/cathuggerseven.png"
+                            alt="Code snippet: Filter function">
+                    </li>
+                    <li>
+                        <p>The eventListener</p><img src="images/cathuggereight.png" alt="Code snippet: eventListener">
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- twelfth section -->
+        <section>
+            <article>
+                <ul>
+                    <li>
+                        <p>I added some storytelling, made sure the page looked good visually, and my project was done!
+                            I faced a bunch of challenges and I’m happy I was able to overcome them, with a little help
+                            from my teachers and the internet.
+                        </p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- section -->
+        <section>
+            <article>
+                <ul>
+                    <li>
+                        <h3>Results</h3>
+                    </li>
+                </ul>
+
+                <ul class="projectimages">
+                    <li class="anotherexception">
+                        <img src="gifs/cathuggerresults.gif" alt="gif showing the entire page">
+                    </li>
+                </ul>
+
+                <ul class="centeredul">
+                    <li>
+                        <p>Check the project out for yourself (mobile only):</p>
+                    </li>
+                </ul>
+
+                <ul class="projectthreebutton">
+                    <li><a href="https://tech-track-22-23-six.vercel.app/" target="_blank">
+                            <p>Website</p>
+                        </a></li>
+                </ul>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <section>
+            <ul>
+                <li>
+                    <h2>Contact</h2>
+                </li>
+            </ul>
+
+            <ul>
+                <li><a href="https://www.linkedin.com/in/romy-jongkees-274b97210/" target="_blank"><img
+                            src="images/linkedin.png" alt="My LinkedIn"></a></li>
+                <li><a href=mailto:romyjongkees02@gmail.com><img src="images/gmail.png" alt="My Gmail"></a></li>
+                <li><a href="https://github.com/romyjkk" target="_blank"><img src="images/github.png"
+                            alt="My Github"></a></li>
+            </ul>
+        </section>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+
+</body>
